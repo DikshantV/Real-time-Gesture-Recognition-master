@@ -2,21 +2,6 @@
 PyTorch implementation of the article [Real-time Hand Gesture Detection and Classification Using Convolutional Neural Networks](https://arxiv.org/abs/1901.10323) and [Resource Efficient 3D Convolutional Neural Networks](https://arxiv.org/pdf/1904.02422.pdf), codes and pretrained models.
 
 
-<div align="center" style="width:image width px;">
-  <img  src="https://media.giphy.com/media/9M3aPvPOVxSQmYGv8p/giphy.gif" width=500 alt="simulation results">
-</div>
-
-Figure: A real-time simulation of the architecture with input video from EgoGesture dataset (on left side) and real-time (online) classification scores of each gesture (on right side) are shown, where each class is annotated with different color. 
-
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=ahmetgunduz/Real-time-GesRec&type=Date)](https://star-history.com/#ahmetgunduz/Real-time-GesRec&Date)
-
-
-This code includes training, fine-tuning and testing on EgoGesture and nvGesture datasets.  
-Note that the code only includes ResNet-10, ResNetL-10, ResneXt-101, C3D v1, whose other versions can be easily added.
-
 ## Abstract
 Real-time recognition of dynamic hand gestures from video streams is a challenging task since (i) 
 there is no indication when a gesture starts and ends in the video, (ii) performed gestures should 
@@ -136,31 +121,6 @@ bash run_offline.sh
 bash run_online.sh
 ```
 
-## Citation
-
-Please cite the following articles if you use this code or pre-trained models:
-
-```bibtex
-@article{kopuklu_real-time_2019,
-	title = {Real-time Hand Gesture Detection and Classification Using Convolutional Neural Networks},
-	url = {http://arxiv.org/abs/1901.10323},
-	author = {Köpüklü, Okan and Gunduz, Ahmet and Kose, Neslihan and Rigoll, Gerhard},
-  year={2019}
-}
-```
-
-```bibtex
-@article{kopuklu2020online,
-  title={Online Dynamic Hand Gesture Recognition Including Efficiency Analysis},
-  author={K{\"o}p{\"u}kl{\"u}, Okan and Gunduz, Ahmet and Kose, Neslihan and Rigoll, Gerhard},
-  journal={IEEE Transactions on Biometrics, Behavior, and Identity Science},
-  volume={2},
-  number={2},
-  pages={85--97},
-  year={2020},
-  publisher={IEEE}
-}
-```
 
 ## Acknowledgement
 I thank Kensho Hara for releasing his [codebase](https://github.com/kenshohara/3D-ResNets-PyTorch), which I build my work on top.
