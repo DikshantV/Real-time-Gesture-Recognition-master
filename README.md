@@ -25,7 +25,7 @@ we obtain considerable early detections while achieving performances close to of
 * [PyTorch](http://pytorch.org/)
 
 ```bash
-conda install pytorch torchvision cuda80 -c soumith
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 ```
 
 * Python 3
